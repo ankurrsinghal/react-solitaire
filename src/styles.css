@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  padding: 2rem;
+  margin: 0 auto;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.game {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  flex: 1;
+}
+
+.sidebar {
+  width: 300px;
+}
+
+.menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  background-color: aliceblue;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
